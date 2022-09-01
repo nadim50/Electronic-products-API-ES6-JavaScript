@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electronic Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header -->
+    <h1 class="text-center text-success fw-bold mt-5">Explore The Electronic World</h1>
+
+    <!-- search box and button  add -->
+    <section class="container">
+        <input id="search-field" type="text" class="form-control w-25 mb-2 mt-5" placeholder="search the Products">
+        <div id="btn-search" class="btn btn-primary mb-3">search</div>
+
+
+        <!-- No matching is found -->
+        <div>
+            <h1 id="no-item" class="d-none text-primary">No item is found</h1>
+        </div>
+
+        <!-- Spin loader -->
+        <div class="d-none" id="spinLoader">
+            <div class="d-flex justify-content-center align-items-center">
+
+                <div class="spinner-grow text-primary me-4" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+
+                <div class="spinner-grow text-secondary me-4" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+
+                <div class="spinner-grow text-success me-4" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-danger me-4" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning me-4" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-info me-4" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-light me-4" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- body -->
+
+
+        <div id="electronic-container" class="row row-cols-1 row-cols-md-5 g-4">
+
+        </div>
+
+        <!-- Modal design -->
+
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div>
+            <div class="modal fade" id="electronicDetailModal" tabindex="-1"
+                aria-labelledby="electronicDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-danger" id="electronicDetailModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-secondary" id="other-info">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  show all -->
+        <div id="show-all" class="text-center d-none mb-4">
+            <div id="btn-all" class="btn btn-primary">show all</div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="phone.js"></script>
+</body>
+
+</html>
